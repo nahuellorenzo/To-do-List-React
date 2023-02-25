@@ -1,6 +1,6 @@
 # About
 
-This is a todo app 
+This is a to do list app 
 
 ## Usage
 
