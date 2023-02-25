@@ -11,3 +11,72 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Estilos para la lista de tareas */
+.todo-list {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+/* Estilos para los elementos de la lista */
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+/* Estilos para el botón de eliminar */
+.todo-item .delete-btn {
+  background-color: #f56565;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.todo-item .delete-btn:hover {
+  background-color: #e53e3e;
+}
+
+/* Estilos para el botón de completado */
+.todo-item .complete-btn {
+  background-color: #38a169;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.todo-item .complete-btn:hover {
+  background-color: #2f855a;
+}
+
+/* Estilos para el texto de la tarea */
+.todo-item .text {
+  flex: 1;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  color: #4a5568;
+}
+
+/* Estilos para la tarea completada */
+.todo-item.complete .text {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #F7FAFC;
+  color: #4A5568;
+}
